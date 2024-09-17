@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GreenPulse Predictor</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <style>
+        .causes-item .causes-img img {
+ height: 450px; /* Set a fixed height for all images */
+ object-fit: cover; /* Ensures the image covers the entire area without stretching */
+ width: 100%; /* Ensures the image takes the full width of its container */
+ display: block; /* Removes any bottom spacing caused by inline elements */
+ border-radius: 5px; /* Optional: Adds rounded corners to the images */
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <div class="container-fluid fixed-top px-0">
+        <nav class="navbar navbar-light bg-light navbar-expand-xl">
+            <a href="/" class="navbar-brand ms-3">
+                <h3 class="text-primary ">GreenPulse Predictor</h3>
+            </a>
+            <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="/" class="nav-item nav-link">Home</a>
+                    <a href="/about" class="nav-item nav-link ">About</a>
+                    <a href="/colab" class="nav-item nav-link ">Colab Link</a>
+                    <a href="/team" class="nav-item nav-link active">Team</a>
+                    <a href="/contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
+                    <a href="/predict" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">Predict Now!</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h3 class="text-white display-3 mb-4">Our Team</h1>
+        <p class="fs-5 text-white mb-4">Protect Our Planet, Protect Our Future!</p>
+        <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active text-white">Our Team</li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
+<!-- Causes Start -->
+<div class="container-fluid causes py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+            <h5 class="text-uppercase text-primary">The Innovators at Work</h5>
+            <h1 class="mb-4">Meet the Experts Tackling Global Warming</h1>
+            <p class="mb-0">At the heart of our mission is a diverse team of experts committed to fighting global warming. Each member plays a critical role in developing innovative solutions to reduce carbon footprints, promote sustainable practices, and drive global change. Together, we’re turning down the heat on our planet and paving the way for a greener future.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Drishti -->
+            <div class="col-lg-6 col-xl-3">
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="{{ url_for('static', filename='images/Drishti.jpeg') }}" class="img-fluid w-100" alt="Image">
+                        <div class="causes-link pb-2 px-3"></div>
+                        <div class="causes-dination p-2">
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">AI & Python Experts</a>
+                        </div>
+                    </div>
+                    
+                    <div class="causes-content p-4">
+                        <h4 class="mb-3">Drishti</h4>
+                        <p class="mb-4">Team Leader</p>
+                        <div class="social-icons mt-3">
+                            <center>
+                                <a href="https://www.linkedin.com/in/drishti-chakarvarty-44b199289/" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://drishtichakarvarty.github.io/Drishti_Portfolio/" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fas fa-briefcase"></i>
+                                </a>
+                                <a href="https://github.com/Drishtichakarvarty" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/miss_chakarvarty?igsh=MW41aHU4NDc0ZmZwNg==" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Krati Shukla -->
+            <div class="col-lg-6 col-xl-3">
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="{{ url_for('static', filename='images/Krati.jpeg') }}" class="img-fluid w-100" alt="Image">
+                        <div class="causes-link pb-2 px-3"></div>
+                        <div class="causes-dination p-2">
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">AI & Python Experts</a>
+                        </div>
+                    </div>
+                    
+                    <div class="causes-content p-4">
+                        <h4 class="mb-3">Krati Shukla</h4>
+                        <p class="mb-4">Team Member</p>
+                        <div class="social-icons mt-3">
+                            <center>
+                                <a href="https://www.linkedin.com/in/krati-shukla-062144237/" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://shuklakrati.github.io/Creative-CV/" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fas fa-briefcase"></i>
+                                </a>
+                                <a href="https://github.com/ShuklaKrati" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/_shukla_kriti/?igshid=Yzg5MTU1MDY%3D" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Abhishek Shukla -->
+            <div class="col-lg-6 col-xl-3">
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="{{ url_for('static', filename='images/Abhishek.jpeg') }}" class="img-fluid w-100" alt="Image">
+                        <div class="causes-link pb-2 px-3"></div>
+                        <div class="causes-dination p-2">
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">AI & Python Experts</a>
+                        </div>
+                    </div>
+                    
+                    <div class="causes-content p-4">
+                        <h4 class="mb-3">Abhishek Shukla</h4>
+                        <p class="mb-4">Team Member</p>
+                        <div class="social-icons mt-3">
+                            <center>
+                                <a href="https://www.linkedin.com/in/abhishuklaz/" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://iabhi1703.github.io/Portfolio" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fas fa-briefcase"></i>
+                                </a>
+                                <a href="https://github.com/iabhi1703" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/its_iabhishek" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Imrana Khanam -->
+            <div class="col-lg-6 col-xl-3">
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="{{ url_for('static', filename='images/Imrana.jpeg') }}" class="img-fluid w-100" alt="Image">
+                        <div class="causes-link pb-2 px-3"></div>
+                        <div class="causes-dination p-2">
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">AI & Python Experts</a>
+                        </div>
+                    </div>
+                    
+                    <div class="causes-content p-4">
+                        <h4 class="mb-3">Imrana Khanam</h4>
+                        <p class="mb-4">Team Member</p>
+                        <div class="social-icons mt-3">
+                            <center>
+                                <a href="https://www.linkedin.com/in/sneha-gupta-6345a1222/" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://snehagupta888.github.io/" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fas fa-briefcase"></i>
+                                </a>
+                                <a href="https://github.com/SnehaGupta888" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/sneha_gupta_1505/" style="color: #ee6d18; font-size: 20px; margin-right: 12px; text-decoration: none;" onmouseover="this.style.color='#FFD700'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='#ffb300'; this.style.transform='scale(1)';">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Causes End -->
+<!-- Footer Start -->
+<div class="container-fluid footer bg-dark text-body py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- EcoBrief on the Left -->
+            <div class="col-md-6 col-lg-4">
+                <div class="footer-item">
+                    <h4 class="mb-4 text-white">EcoBrief</h4>
+                    <p class="mb-4">"Global warming's reality is revealed in the data: rising temperatures, higher sea levels, worsening air quality, and unpredictable weather. Our past data is a warning for the future".</p>
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-0 bg-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                        <button type="button" class="btn-hover-bg btn btn-primary position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Our Initiatives in the Middle -->
+            <div class="col-md-6 col-lg-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Our Initiatives</h4>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Carbon Monitoring</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Renewable Energy Adoption</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Ecosystem Preservation</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Climate Data Analytics</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Environmental Education</a>
+                    <a href="#"><i class="fas fa-angle-right me-2"></i> Sustainable Practices</a>
+                </div>
+            </div>
+    <!-- Our Gallery on the Right -->
+<div class="col-md-6 col-lg-4">
+    <div class="footer-item">
+        <h4 class="mb-4 text-white">Our Gallery</h4>
+        <div class="row g-2">
+            {% for i in range(1, 7) %}
+            <div class="col-4">
+                <div class="footer-gallery">
+                    <img src="{{ url_for('static', filename='images/gallery-footer-' ~ i ~ '.jpg') }}" class="img-fluid w-100" alt="Gallery Image {{ i }}">
+                    <div class="footer-search-icon">
+                        <a href="{{ url_for('static', filename='images/gallery-footer-' ~ i ~ '.jpg') }}" data-lightbox="footerGallery-{{ i }}" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-md-0">
+                <span class="text-body">
+                    <a href="#"><i class="fas fa-copyright text-light me-2"></i>Green Tech Innovators</a>, All right reserved.
+                </span>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn-hover-color btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn-hover-color btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center text-md-end text-body">
+                <!-- Credit Attribution -->
+                Designed By Green Tech Innovators
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
